@@ -1,1 +1,265 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Leaderboard</title>
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
+</head>
+<body>
+	<section class="main-content">
+		<div class="container">
+			<h2>Canadian Premier League </h2>
+      <h5>Juego las Sillas</h5>
+			<br>
+			<br>
+
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="leaderboard-card leaderboard-card--first">
+						<div class="leaderboard-card__top">
+							<h3 class="text-center">1 Victoria</h3>
+						</div>
+						<div class="leaderboard-card__body">
+							<div class="text-center">
+								<img src="img/rafa.png" class="circle-img mb-2" alt="User Img">
+								<h5 class="mb-0">Rafaela</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="leaderboard-card leaderboard-card--first">
+						<div class="leaderboard-card__top">
+							<h3 class="text-center">1 Victoria</h3>
+						</div>
+						<div class="leaderboard-card__body">
+							<div class="text-center">
+								<img src="img/jose.png" class="circle-img mb-2" alt="User Img">
+								<h5 class="mb-0">Jose Amaris</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="leaderboard-card leaderboard-card--first">
+						<div class="leaderboard-card__top">
+							<h3 class="text-center">1 Victoria</h3>
+						</div>
+						<div class="leaderboard-card__body">
+							<div class="text-center">
+								<img src="img/alfredo.png" class="circle-img mb-2" alt="User Img">
+								<h5 class="mb-0">Alfredo</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+      <br>
+			<h4>La Plebe</h4>
+      <br>
+			<table class="table">
+				<!-- <thead>
+					<tr>
+						<th>User</th>
+						<th>Status</th>
+						<th>Location</th>
+						<th>Email</th>
+						<th>Congratulate</th>
+					</tr>
+				</thead> -->
+				<tbody>
+					<tr>
+						<td>
+							<div class="d-flex align-items-center">
+								<img src="img/mary.png" class="circle-img circle-img--small mr-2" alt="User Img">
+								<div class="user-info__basic">
+									<h5 class="mb-0">Maryant Paredes</h5>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="d-flex align-items-baseline">
+								<h4 class="mr-1">0 Victorias</h4>
+							</div>
+						</td>
+					</tr>
+          <tr>
+						<td>
+							<div class="d-flex align-items-center">
+								<img src="img/tavo.png" class="circle-img circle-img--small mr-2" alt="User Img">
+								<div class="user-info__basic">
+									<h5 class="mb-0">Tavo</h5>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="d-flex align-items-baseline">
+								<h4 class="mr-1">0 Victorias</h4>
+							</div>
+						</td>
+					</tr>
+          <tr>
+						<td>
+							<div class="d-flex align-items-center">
+								<img src="img/natacha.png" class="circle-img circle-img--small mr-2" alt="User Img">
+								<div class="user-info__basic">
+									<h5 class="mb-0">Natacha</h5>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="d-flex align-items-baseline">
+								<h4 class="mr-1">0 Victorias</h4>
+							</div>
+						</td>
+					</tr>
+          <tr>
+						<td>
+							<div class="d-flex align-items-center">
+								<img src="img/andreina.png" class="circle-img circle-img--small mr-2" alt="User Img">
+								<div class="user-info__basic">
+									<h5 class="mb-0">Andreina</h5>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="d-flex align-items-baseline">
+								<h4 class="mr-1">0 Victorias</h4>
+							</div>
+						</td>
+					</tr>
+          <tr>
+						<td>
+							<div class="d-flex align-items-center">
+								<img src="img/gaby.png" class="circle-img circle-img--small mr-2" alt="User Img">
+								<div class="user-info__basic">
+									<h5 class="mb-0">Gaby</h5>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="d-flex align-items-baseline">
+								<h4 class="mr-1">0 Victorias</h4>
+							</div>
+						</td>
+					</tr>
+					<!-- <tr>
+						<td>
+							<div class="d-flex align-items-center">
+								<img src="img/rafa.png" class="circle-img circle-img--small mr-2" alt="User Img">
+								<div class="user-info__basic">
+									<h5 class="mb-0">Sandeep Sandy</h5>
+									<p class="text-muted mb-0">@sandeep</p>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="d-flex align-items-baseline">
+								<h4 class="mr-1">$1,051</h4><small class="text-success"><i class="fa fa-arrow-up"></i>5%</small>
+							</div>
+						</td>
+						<td>Bangalore</td>
+						<td>sandeep@sandeepmail.com</td>
+						<td>
+							<button class="btn btn-success btn-sm">Congratulate</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="d-flex align-items-center">
+								<img src="img/alfredo.png" class="circle-img circle-img--small mr-2" alt="User Img">
+								<div class="user-info__basic">
+									<h5 class="mb-0">John Doe</h5>
+									<p class="text-muted mb-0">@johndoe</p>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="d-flex align-items-baseline">
+								<h4 class="mr-1">$1,012</h4><small class="text-success"><i class="fa fa-arrow-up"></i>5%</small>
+							</div>
+						</td>
+						<td>Bangalore</td>
+						<td>kiran@kiranmail.com</td>
+						<td>
+							<button class="btn btn-success btn-sm">Congratulate</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="d-flex align-items-center">
+								<img src="img/user4.jpg" class="circle-img circle-img--small mr-2" alt="User Img">
+								<div class="user-info__basic">
+									<h5 class="mb-0">John Noakes</h5>
+									<p class="text-muted mb-0">@johnnoakes</p>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="d-flex align-items-baseline">
+								<h4 class="mr-1">$986</h4><small class="text-success"><i class="fa fa-arrow-up"></i>5%</small>
+							</div>
+						</td>
+						<td>Bangalore</td>
+						<td>kiran@kiranmail.com</td>
+						<td>
+							<button class="btn btn-success btn-sm">Congratulate</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="d-flex align-items-center">
+								<img src="img/user5.jpg" class="circle-img circle-img--small mr-2" alt="User Img">
+								<div class="user-info__basic">
+									<h5 class="mb-0">Tom harry</h5>
+									<p class="text-muted mb-0">@tomharry</p>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="d-flex align-items-baseline">
+								<h4 class="mr-1">$951</h4><small class="text-success"><i class="fa fa-arrow-up"></i>5%</small>
+							</div>
+						</td>
+						<td>Bangalore</td>
+						<td>kiran@kiranmail.com</td>
+						<td>
+							<button class="btn btn-success btn-sm">Congratulate</button>
+						</td>
+					</tr> -->
+				</tbody>
+			</table>
+
+      <video
+        id="my-video"
+        class="video-js"
+        controls
+        preload="auto"
+        width="200"
+        height="300"
+        poster="MY_VIDEO_POSTER.jpg"
+        data-setup="{}"
+      >
+        <source src="videos/video.mp4" type="video/mp4" />
+        <p class="vjs-no-js">
+          To view this video please enable JavaScript, and consider upgrading to a
+          web browser that
+          <a href="https://videojs.com/html5-video-support/" target="_blank"
+            >supports HTML5 video</a
+          >
+        </p>
+      </video>
+		</div>
+	</section>
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
