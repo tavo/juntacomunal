@@ -15,7 +15,17 @@ body {
 	border-radius: 5px;
 	overflow: hidden;
 	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	border-color: #fff;
+	border-width: 3px;
+	border-style: solid;
+	cursor: pointer;
 }
+.leaderboard-card:hover {
+	border-color: #6f42c1;
+	border-width: 3px;
+	border-style: solid;
+}
+
 .leaderboard-card.leaderboard-card--first {
 	transform: scale(1.05);
 }
@@ -74,4 +84,47 @@ img.circle-img.circle-img--small {
 }
 .table tbody tr td:nth-last-child(1) {
 	border-radius: 0 5px 5px 0;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 540px; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+	text-align: right;
+	margin-top: -15px;
+	margin-right: -10px;
+	margin-bottom: 3px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }

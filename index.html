@@ -7,8 +7,9 @@
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-
   <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
+	<script type="text/javascript" src="javascript/modals.js"></script>
+
 </head>
 <body>
 	<section class="main-content">
@@ -20,7 +21,7 @@
 
 			<div class="row">
 				<div class="col-sm-4">
-					<div class="leaderboard-card leaderboard-card--first">
+					<div class="leaderboard-card leaderboard-card--first" id="final-rafa-button">
 						<div class="leaderboard-card__top">
 							<h3 class="text-center">1 Victoria</h3>
 						</div>
@@ -33,7 +34,7 @@
 					</div>
 				</div>
 				<div class="col-sm-4">
-					<div class="leaderboard-card leaderboard-card--first">
+					<div class="leaderboard-card leaderboard-card--first" id="final-jose-button">
 						<div class="leaderboard-card__top">
 							<h3 class="text-center">1 Victoria</h3>
 						</div>
@@ -64,22 +65,13 @@
 			<h4>La Plebe</h4>
       <br>
 			<table class="table">
-				<!-- <thead>
-					<tr>
-						<th>User</th>
-						<th>Status</th>
-						<th>Location</th>
-						<th>Email</th>
-						<th>Congratulate</th>
-					</tr>
-				</thead> -->
 				<tbody>
 					<tr>
 						<td>
 							<div class="d-flex align-items-center">
 								<img src="img/mary.png" class="circle-img circle-img--small mr-2" alt="User Img">
 								<div class="user-info__basic">
-									<h5 class="mb-0">Maryant Paredes</h5>
+									<h5 class="mb-0">Maryant</h5>
 								</div>
 							</div>
 						</td>
@@ -149,112 +141,63 @@
 							</div>
 						</td>
 					</tr>
-					<!-- <tr>
-						<td>
-							<div class="d-flex align-items-center">
-								<img src="img/rafa.png" class="circle-img circle-img--small mr-2" alt="User Img">
-								<div class="user-info__basic">
-									<h5 class="mb-0">Sandeep Sandy</h5>
-									<p class="text-muted mb-0">@sandeep</p>
-								</div>
-							</div>
-						</td>
-						<td>
-							<div class="d-flex align-items-baseline">
-								<h4 class="mr-1">$1,051</h4><small class="text-success"><i class="fa fa-arrow-up"></i>5%</small>
-							</div>
-						</td>
-						<td>Bangalore</td>
-						<td>sandeep@sandeepmail.com</td>
-						<td>
-							<button class="btn btn-success btn-sm">Congratulate</button>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<div class="d-flex align-items-center">
-								<img src="img/alfredo.png" class="circle-img circle-img--small mr-2" alt="User Img">
-								<div class="user-info__basic">
-									<h5 class="mb-0">John Doe</h5>
-									<p class="text-muted mb-0">@johndoe</p>
-								</div>
-							</div>
-						</td>
-						<td>
-							<div class="d-flex align-items-baseline">
-								<h4 class="mr-1">$1,012</h4><small class="text-success"><i class="fa fa-arrow-up"></i>5%</small>
-							</div>
-						</td>
-						<td>Bangalore</td>
-						<td>kiran@kiranmail.com</td>
-						<td>
-							<button class="btn btn-success btn-sm">Congratulate</button>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<div class="d-flex align-items-center">
-								<img src="img/user4.jpg" class="circle-img circle-img--small mr-2" alt="User Img">
-								<div class="user-info__basic">
-									<h5 class="mb-0">John Noakes</h5>
-									<p class="text-muted mb-0">@johnnoakes</p>
-								</div>
-							</div>
-						</td>
-						<td>
-							<div class="d-flex align-items-baseline">
-								<h4 class="mr-1">$986</h4><small class="text-success"><i class="fa fa-arrow-up"></i>5%</small>
-							</div>
-						</td>
-						<td>Bangalore</td>
-						<td>kiran@kiranmail.com</td>
-						<td>
-							<button class="btn btn-success btn-sm">Congratulate</button>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<div class="d-flex align-items-center">
-								<img src="img/user5.jpg" class="circle-img circle-img--small mr-2" alt="User Img">
-								<div class="user-info__basic">
-									<h5 class="mb-0">Tom harry</h5>
-									<p class="text-muted mb-0">@tomharry</p>
-								</div>
-							</div>
-						</td>
-						<td>
-							<div class="d-flex align-items-baseline">
-								<h4 class="mr-1">$951</h4><small class="text-success"><i class="fa fa-arrow-up"></i>5%</small>
-							</div>
-						</td>
-						<td>Bangalore</td>
-						<td>kiran@kiranmail.com</td>
-						<td>
-							<button class="btn btn-success btn-sm">Congratulate</button>
-						</td>
-					</tr> -->
 				</tbody>
 			</table>
 
-      <video
-        id="my-video"
-        class="video-js"
-        controls
-        preload="auto"
-        width="200"
-        height="300"
-        poster="MY_VIDEO_POSTER.jpg"
-        data-setup="{}"
-      >
-        <source src="videos/video.mp4" type="video/mp4" />
-        <p class="vjs-no-js">
-          To view this video please enable JavaScript, and consider upgrading to a
-          web browser that
-          <a href="https://videojs.com/html5-video-support/" target="_blank"
-            >supports HTML5 video</a
-          >
-        </p>
-      </video>
+			<div id="final-jose" class="modal">
+				<!-- Modal content -->
+				<div class="modal-content">
+					<span class="close" id="final-jose-close">&times;</span>
+					
+					<video
+						id="jose-video"
+						class="video-js"
+						controls
+						preload="auto"
+						width="500"
+						height="500"
+						poster="MY_VIDEO_POSTER.jpg"
+						data-setup="{}"
+					>
+						<source src="videos/final-jose.mp4" type="video/mp4" />
+						<p class="vjs-no-js">
+							To view this video please enable JavaScript, and consider upgrading to a
+							web browser that
+							<a href="https://videojs.com/html5-video-support/" target="_blank"
+								>supports HTML5 video</a
+							>
+						</p>
+					</video>
+				</div>
+			</div>
+
+			<div id="final-rafa" class="modal">
+				<!-- Modal content -->
+				<div class="modal-content">
+					<span class="close" id="final-rafa-close">&times;</span>
+					
+					<video
+						id="my-video"
+						class="video-js"
+						controls
+						preload="auto"
+						width="500"
+						height="500"
+						poster="MY_VIDEO_POSTER.jpg"
+						data-setup="{}"
+					>
+						<source src="videos/final-rafa.mp4" type="video/mp4" />
+						<p class="vjs-no-js">
+							To view this video please enable JavaScript, and consider upgrading to a
+							web browser that
+							<a href="https://videojs.com/html5-video-support/" target="_blank"
+								>supports HTML5 video</a
+							>
+						</p>
+					</video>
+				</div>
+			</div>
+
 		</div>
 	</section>
 	
